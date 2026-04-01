@@ -25,4 +25,4 @@ Pour explorer le projet sur votre machine :
 
 1. Clonez le dépôt :
    ```bash
-   git clone [https://github.com/VOTRE_PSEUDO/NOM_DU_REPO.git](https://github.com/VOTRE_PSEUDO/NOM_DU_REPO.git)
+   git clone [https://github.com/ZAHAVIBenjamin/UE2_PHP_DB_MVC.git](https://github.com/ZAHAVIBenjamin/UE2_PHP_DB_MVC.git)
