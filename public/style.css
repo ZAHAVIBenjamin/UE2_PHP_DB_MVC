@@ -1,0 +1,1297 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Merriweather:wght@400;700&display=swap");
+@keyframes defilement {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+:root {
+  /* Couleurs principales */
+  --primary-color: goldenrod;
+  --secondary-color: #635419fe;
+  --troisieme-color: brown;
+  --text-color-1: goldenrod;
+  --text-color-2: #332902;
+
+  /* Typographie */
+  --font-primary: "Cinzel Decorative", serif;
+}
+
+textarea {
+  font-family: "Cinzel Decorative", serif;
+  background-color: var(--primary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel Decorative", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-image: url("image/BG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: fit-content;
+}
+
+/* ---------------------------------------page login */
+.bodyLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  gap: 20px;
+}
+
+#imageLog {
+  height: 200px;
+  width: 200px;
+}
+
+.titreLog {
+  width: 50%;
+  height: fit-content;
+  text-align: center;
+  color: goldenrod;
+}
+
+#formLog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputLog {
+  margin-left: 10px;
+  border-radius: 10px;
+  font-family: "Cinzel Decorative", serif;
+  background-color: goldenrod;
+  color: #332902;
+  width: 300px;
+}
+
+/* ---------------------------------------page inscription */
+
+#inscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(image/fondbandeausocial.png);
+  border: #daa520 solid 1px;
+  border-radius: 15px;
+}
+#formulaireI {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(image/fondbandeausocial.png);
+  border: #daa520 solid 1px;
+  border-radius: 15px;
+  padding: 20px;
+}
+#textare {
+  height: 300px;
+}
+/* ---------------------------------------header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+#social {
+  background-image: url(image/fondbandeausocial.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  font-family: "Cinzel Decorative", serif;
+  border-bottom: 1px solid goldenrod;
+}
+
+#rechercher {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+#inputRechercher {
+  width: 300px;
+  border-radius: 15px;
+  font-family: "Cinzel Decorative", serif;
+  border: solid 1px rgb(57, 53, 42);
+  color: #332902;
+  background-color: goldenrod;
+}
+
+#buttonRechercher {
+  width: 50px;
+}
+#divSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  margin-left: 100px;
+}
+
+.bouttonSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: fit-content;
+  margin-right: 2%;
+  margin-left: 2%;
+  border: solid 1px goldenrod;
+  border-radius: 20px;
+  text-decoration: none;
+  background-image: url(image/fondbandeausocial.png);
+  color: goldenrod;
+  > img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+#bandeau {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+
+#logo1 {
+  border-radius: 50%;
+  height: 170px;
+  width: 170px;
+  margin-top: 8px;
+}
+
+#titre1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: fit-content;
+  text-align: center;
+  color: goldenrod;
+  margin-left: 200px;
+}
+
+h1 {
+  height: 80%;
+  width: 80%;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 200%;
+  background-image: url(image/fondbandeausocial2.png);
+  border: #daa520 solid 1px;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+#bandeauLog {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  background-image: url(image/fondbandeausocial.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  > input {
+    margin-left: 10px;
+    border-radius: 10px;
+    font-family: "Cinzel Decorative", serif;
+    background-color: goldenrod;
+    color: #332902;
+    width: 300px;
+  }
+}
+#newLetter {
+  width: 50%;
+  border-radius: 10px;
+  background-color: goldenrod;
+  color: #332902;
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+}
+#outputNewLetter {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  white-space: pre;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#trainNewLetter {
+  display: inline-block;
+  color: #332902;
+  padding-left: 100%;
+  animation: defilement 50s linear infinite;
+}
+#bandeauLog > p strong {
+  color: goldenrod;
+}
+
+#bandeauLog > button {
+  margin-right: 20px;
+  margin-left: 10px;
+  height: 20px;
+}
+
+.bouttonOut {
+  color: goldenrod;
+}
+
+#lienpanier {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+}
+
+/* -----------------------main fixe */
+#mainInscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  height: 600px;
+  width: 100%;
+}
+#coteGauche {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border-radius: 100px;
+}
+
+#sideMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 80vh;
+}
+.clef {
+  height: 10%;
+  position: absolute;
+  z-index: -1;
+  margin-left: 0px;
+  transition: margin-left 0.4s;
+}
+.fondBouttonNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 15%;
+  background-image: url(image/fondBouttonNav.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.bouttonNav {
+  box-shadow: -2px -2px 2px goldenrod;
+  width: 120px;
+  min-height: 50px;
+  border-radius: 50px;
+  border: solid 1px #daa520;
+  background-image: url(image/fondbandeausocial.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  border: var(--primary-color) solid 1px;
+  position: initial;
+}
+.bouttonNav:hover {
+  box-shadow: none;
+  transform: translateX(-1px);
+  transform: translatey(-1px);
+}
+.bouttonNav strong {
+  font-family: "Cinzel Decorative", serif;
+  color: #daa520;
+}
+
+.bouttonNavDesa {
+  width: 120px;
+  min-height: 50px;
+  border-radius: 50px;
+  border: solid 1px #daa520;
+  background-image: url(image/fondbandeausocial.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  border: var(--primary-color) solid 1px;
+  position: initial;
+  pointer-events: none;
+  transform: translateX(-1px);
+  transform: translatey(-1px);
+}
+
+#content-container {
+  width: 100%;
+}
+
+/* ------------------page accueil */
+
+#corpMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+#imgTexte {
+  height: 100%;
+  width: 30%;
+}
+#hautTexte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+  width: 50%;
+  background-image: url(image/fondbandeausocial2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: #daa520 solid 1px;
+  border-radius: 10px;
+}
+#introTitre {
+  color: var(--primary-color);
+  font-family: "Cinzel Decorative", serif;
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+}
+#sousTitre {
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Cinzel Decorative", serif;
+  text-align: center;
+}
+#introCorps {
+  text-align: justify;
+  color: red;
+  font-family: "Cinzel Decorative", serif;
+  margin-bottom: 20px;
+  height: fit-content;
+  width: 90%;
+}
+#introCorps2 {
+  text-align: justify;
+  color: goldenrod;
+  font-family: "Cinzel Decorative", serif;
+  margin-bottom: 20px;
+  height: fit-content;
+  width: 90%;
+}
+
+/* -----------------footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: fit-content;
+  width: 100%;
+  margin-top: auto;
+  background-image: url(image/fondbandeausocial.png);
+  border-top: solid 2px var(--primary-color);
+}
+
+#footerLogo {
+  height: 120px;
+  width: 120px;
+}
+
+#footerCadre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 75%;
+}
+#footerTexte {
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 100;
+  padding: 100;
+  color: goldenrod;
+}
+
+/* --------------------------profile */
+
+#profile1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: fit-content;
+  width: 80%;
+}
+
+#profileimage {
+  width: 22%;
+}
+
+#profilDiv {
+  height: fit-content;
+  width: 78%;
+  background-image: url(image/fondbandeausocial.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  border: 1px solid goldenrod;
+  border-radius: 15px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  > div {
+    width: 50%;
+  }
+}
+
+#tableBoutique {
+  background: url("image/fondbandeausocial.png"), #dcb88a;
+  background-size: cover;
+  border: 1px solid #000;
+  border-radius: 12px;
+  height: fit-content;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+#tableBoutique:hover {
+  transform: translateY(-10px);
+  border-color: goldenrod;
+}
+
+#tdNom h2 {
+  font-size: 1.2rem;
+  color: #daa520;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #daa520;
+}
+
+#imageParchemin {
+  display: block;
+  width: 10px;
+  height: auto;
+  margin: 15px auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+#tdPrix,
+#tdButin {
+  font-weight: bold;
+  color: #daa520;
+  font-size: 0.9rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 4px;
+  min-width: 83px;
+}
+
+#tdButtin {
+  color: #daa520;
+}
+
+/* Bouton Acheter */
+button {
+  width: 100%;
+  background-color: #5d4037;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #8d6e63;
+}
+/* -----------------------boutique */
+
+#boutiqueCorp {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: fit-content;
+  width: 80%;
+  font-family: "Georgia", serif;
+}
+
+#boutiqueImg {
+  width: 35%;
+}
+#hautDeBoutique {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  border: 1px solid goldenrod;
+  border-radius: 15px;
+  font-family: "Georgia", serif;
+  background-image: url(image/fondbandeausocial.png);
+}
+#bouttonAjoute {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: -2%;
+}
+#formAjoute {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.plus-dispo {
+  color: #c62828;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* -----------------------contact */
+#contactCorp {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+}
+
+#contactImg {
+  width: 20%;
+}
+#formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  width: 50%;
+  margin-left: 180px;
+  border: #daa520 1px solid;
+  border-radius: 15px;
+  gap: 10px;
+  background-image: url(image/fondbandeausocial.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#formulaire::placeholder {
+  color: #635419fe;
+}
+#textare {
+  width: 300px;
+}
+#envoyer {
+  width: fit-content;
+  margin-left: -2%;
+}
+/* -----------------------option */
+
+#optionCorp {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#optionImg {
+  width: 20%;
+}
+#optionItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: fit-content;
+  background-image: url(image/fondbandeausocial.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 5px;
+  border: #daa520 1px solid;
+  border-radius: 15px;
+  color: goldenrod;
+  margin-left: 5%;
+}
+#optionForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 20%;
+  border-radius: 10%;
+}
+
+#API {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(image/fondbandeausocial.png);
+  width: 50%;
+  border: #daa520 solid 1px;
+  border-radius: 10px;
+  padding-right: 30px;
+}
+.checkbox {
+  background-color: var(--primary-color);
+}
+/* -----------------------chasse */
+#pourTel {
+  display: none;
+}
+#chasseCorp {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+#chasseImage {
+  width: 20%;
+}
+
+#chasseDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(image/fondbandeausocial.png);
+  border: #daa520 1px solid;
+  width: 70%;
+  height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+button {
+  background-image: url(image/fondbandeausocial.png);
+  border: solid 1px goldenrod;
+  border-radius: 10px;
+  color: goldenrod;
+  font-family: "Cinzel Decorative", serif;
+}
+button:hover {
+  scale: 1.5;
+}
+.bouttonSocial:hover {
+  scale: 1.2;
+}
+
+/* -----------------------panier */
+
+#produitsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.panier-actions {
+  background-image: url(image/fondbandeausocial.png);
+  width: fit-content;
+  border: solid 1px goldenrod;
+  border-radius: 10px;
+  color: goldenrod;
+  font-family: "Cinzel Decorative", serif;
+  padding: 20px;
+}
+
+/* -----------------------admin */
+
+#admin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  height: 100px;
+  border: solid 1px goldenrod;
+  border-radius: 10px;
+  background-image: url(image/fondbandeausocial.png);
+}
+
+.aAdmin {
+  color: #daa520;
+}
+
+#tdMessage {
+  display: block;
+  max-height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+/* responssive----------------------------------- */
+
+@media screen and (max-width: 1350px) {
+  body {
+    height: auto;
+  }
+  h1 {
+    font-size: 150%;
+    height: 50%;
+  }
+
+  main {
+    height: 400%;
+    margin-top: 3%;
+  }
+  #coteGauche {
+    justify-content: start;
+  }
+  #sideMenu {
+    height: 100%;
+  }
+  .fondBouttonNav {
+    width: 60%;
+  }
+
+  #corpMenu {
+    justify-content: start;
+    height: 500px;
+    width: 80%;
+  }
+  #corp {
+    height: 100%;
+    width: 80%;
+  }
+  #imgTexte {
+    width: 40%;
+  }
+  #hautTexte {
+    height: 100%;
+    width: 800px;
+    background-size: contain;
+  }
+  #divtexte {
+    height: 80%;
+    width: 80%;
+  }
+  #hautProfil {
+    background-image: url(image/fondObjet2.png);
+    height: 100%;
+  }
+  #profile1 {
+    height: 100%;
+  }
+  #profileInfo {
+    background-image: none;
+    max-height: 300px;
+    > h2 {
+      margin-top: 20%;
+    }
+  }
+  #chasseCorp {
+    height: 100%;
+  }
+  #chasseImage {
+    width: 20%;
+  }
+  #chasseItem {
+    height: 600px;
+    width: 60%;
+    background-image: url(image/fondObjet2vertical.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  #chassePayante {
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 100px;
+    height: 200px;
+    width: 75%;
+  }
+  #chasseGratuite {
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 100px;
+    height: 200px;
+    width: 75%;
+  }
+  #contactCorp {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 80%;
+  }
+  #contactImg {
+    height: 25%;
+    width: 20%;
+  }
+  #optionCorp {
+    height: 500px;
+  }
+  /* #optionImg {
+    height: 50%;
+  } */
+  #formulaire {
+    height: 400px;
+    width: 100%;
+  }
+  #contactForm {
+    height: 60%;
+    width: 80%;
+  }
+  #boutiqueImg {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  main {
+    margin-top: 50px;
+    height: 150vh;
+  }
+  #parentTitre {
+    background-image: url(image/fond_titre2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #titre1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    width: 100%;
+    > h1 {
+      width: 100%;
+      font-size: 120%;
+    }
+  }
+  #bandeauLog {
+    justify-content: center;
+    width: auto;
+  }
+  #newLetter {
+    display: none;
+    width: 0;
+  }
+  #sideMenu {
+    width: 300px;
+    height: 600px;
+  }
+  footer {
+    height: fit-content;
+    justify-content: center;
+  }
+  #profile1 {
+    margin-top: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #hautProfil {
+    background-image: url(image/fondObjet2.png);
+    height: 300px;
+    width: 100%;
+  }
+  #profileInfo {
+    height: 200px;
+    width: 60%;
+    background-image: none;
+    > h2 {
+      margin-top: 200px;
+      width: 80%;
+    }
+  }
+  #boutiqueCorp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  #hautDeBoutique {
+    height: 500px;
+  }
+  #boutiqueImg {
+    height: 80%;
+    width: 40%;
+  }
+  #boutiqueTab {
+    height: 400px;
+    width: 80%;
+  }
+  #optionCorp {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+  }
+  #optionImg {
+    height: 80%;
+    width: 20%;
+  }
+  #optionItem {
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+  }
+  #optionForm {
+    height: 20%;
+    width: 20%;
+  }
+
+  #chasseCorp {
+    height: 100%;
+    width: 80%;
+    display: none;
+  }
+
+  #contactImg {
+    height: 100%;
+    margin-top: 50px;
+  }
+  #contactCorp {
+    flex-direction: column;
+    height: 140vh;
+  }
+  #pourTel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    color: #daa520;
+  }
+  #fondPourTel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(image/fond_titre2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #parentTitre {
+    width: 100%;
+    background-size: 80%;
+    > div > h1 {
+      font-size: 120%;
+      height: 100%;
+    }
+  }
+
+  #footerLogo {
+    display: none;
+  }
+
+  header {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #bandeau {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    height: 200px;
+    > * {
+      margin: 0;
+      padding: 0;
+    }
+    > a {
+      margin-left: 20px;
+    }
+  }
+  #logo1 {
+    height: 50%;
+    width: 100%;
+  }
+  #Titre1 {
+    height: 25%;
+  }
+  h1 {
+    width: 70%;
+    height: 70%;
+    padding: 50px;
+  }
+
+  #bandeauLog {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-left: 10%;
+    z-index: 10;
+  }
+  #sideMenu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    position: sticky;
+    bottom: 0;
+  }
+  #sideMenu3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+  }
+  .fondBouttonNav {
+    width: 50%;
+    height: 100%;
+  }
+  .bouttonNav {
+    width: 120px;
+    min-height: 50px;
+    border-radius: 50px;
+    border: solid 1px #daa520;
+    background-image: url(image/fondbandeausocial.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border: var(--primary-color) solid 1px;
+    position: initial;
+    width: 100%;
+    margin: 15px;
+    color: #daa520;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  #sideMenu {
+    width: 80%;
+  }
+  #coteGauche {
+    display: none;
+    width: 0;
+  }
+  #corpMenu {
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+    flex-direction: column;
+  }
+  #corp {
+    width: 100vw;
+    justify-content: start;
+    align-items: start;
+  }
+  #imgTexte {
+    z-index: 0;
+    width: 30%;
+  }
+  #hautTexte {
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #hautTexte {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    height: 400px;
+  }
+  #divtexte {
+    width: 800px;
+    > * {
+      width: 100%;
+    }
+  }
+  #footerCadre {
+    width: 100%;
+  }
+  #footerTexte {
+    width: 100%;
+  }
+
+  #profile1 {
+    margin-top: -100px;
+  }
+  #profileInfo {
+    > h2 {
+      margin-top: 300px;
+    }
+  }
+  #profileimage {
+    margin-top: 50px;
+  }
+
+  #boutiqueImg {
+    margin-top: 50px;
+  }
+  #boutiqueCorp {
+    width: 100%;
+    margin-top: -100px;
+  }
+  #hautDeBoutique {
+    height: 550px;
+    width: 100%;
+  }
+  #boutiqueTab {
+    height: 400px;
+    width: 80%;
+  }
+  #optionCorp {
+    margin-top: -100px;
+  }
+  #optionImg {
+    width: 15%;
+    margin-top: 50px;
+  }
+  #optionItem {
+    width: 100%;
+  }
+  #optionForm {
+    width: 40%;
+  }
+  #contactCorp {
+    height: 100%;
+    margin-top: -100px;
+  }
+  #contactImg {
+    width: 20%;
+    height: 100%;
+  }
+  #formulaire {
+    height: 200%;
+    width: 180%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    padding: 0;
+    background-image: url(image/fondObjet2vertical.png);
+  }
+  #contactForm {
+    height: 200px;
+    width: 30%;
+  }
+  .lienpanier {
+    top: 50px;
+    right: 450px;
+  }
+}
